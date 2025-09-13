@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../x.jpg') no-repeat center/cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px; /* only for input */
+    margin: 0 0 5px 0; /* remove bottom margin */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+}
+.err {
+    color: red;
+    font-size: 14px;
+    margin: 20px 0px 0 20px;
+    visibility: hidden;
+}
+
+.fit-tag {
+    visibility: hidden;
+}
+
+.register-link-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.register-link-container p a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link-container p a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}

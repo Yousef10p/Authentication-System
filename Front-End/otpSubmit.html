@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="css/otp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/otpSubmit.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="otp-form">
+            <h1>OTP</h1>
+            <p class="timer"></p>
+            <div class="input-box">
+                <p class="err">xxx</p>
+                <input type="number" id="otp_value" placeholder="Please check email" required>
+            </div>
+            <div class="cancel">
+                <div class="register-link">
+                    <a href="login.html">Cancel</a>
+                </div>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
